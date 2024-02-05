@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet">
+    <title>
+        Temperature Converter
+    </title>
+</head>
+
+<body>
+    <div class="box-container">
+        <h2 class="heading">Temperature Converter</h2>
+        <div class="degree-temp-type">
+            <div class="degree-input">
+                <label for="degree">Degrees</label>
+                <input type="text" name="degree" id="degree" oninput="validateInput()" required />
+                <p class="error-message" id="validationMessage"></p>
+            </div>
+            <div class="temp-input">
+                <label for="temp-type">Type</label>
+                <select name="temp-type" id="temp-type" autocomplete="on">
+                    <option value="Celsius" id="Celsius">Celsius</option>
+                    <option value="Fahrenheit" id="Fahrenheit">Fahrenheit</option>
+                </select>
+            </div>
+        </div>
+        
+        <div class="result-container">
+            <label class="result-heading" for="result" class="result">Result</label>
+            <h6 class="result-value" id="result"></h6>
+        </div>
+        <div class="btn-center">
+            <button id="button">Convert</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

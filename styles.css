@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(208, 189, 189);
+    font-size: 1rem;
+}
+
+.box-container {
+    width: 400px;
+    min-width: 320px;
+    border-radius: 25px;
+    padding: 15px 20px 40px;
+    height: auto;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: -5px -5px 250px 0 rgba(255,255,255,0.02) inset;
+    backdrop-filter: blur(20px);
+}
+
+.heading {
+    color:brown;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.result-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.result-heading {
+    color: #555;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.result-value {
+    border-bottom: 2px solid #ccc;
+    padding: 10px;
+    transition: all .45s ease;
+    font-size: 1rem;
+}
+
+.degree-temp-type {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.degree-input, .temp-input {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
+
+label {
+    color: #555;
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+input, select {
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #ccc;
+    padding: 6px;
+    margin-bottom: 10px;
+}
+
+.error-message {
+    color: red;
+    font-size: 0.75rem;
+}
+
+input:focus {
+    border: 1px solid black;
+}
+
+option {
+    background: 3c39e7;
+    color: black;
+}
+
+.btn-center {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    background-color: rgb(99, 99, 249);
+    padding: 10px 30px;
+    width: fit-content;
+    color:white;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    transition: all .3s ease-in;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+
